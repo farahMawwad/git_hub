@@ -1,0 +1,265 @@
+* {
+margin: 0;
+padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: auto 35% 35%;
+    grid-template-rows: auto 60px 2px;
+}
+#nav {
+    grid-column:1/4 ;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 820px auto ;
+    background-color: black;
+    
+    align-items: center;
+    color: white;
+    padding:1%;
+    
+}
+#git_hup,#input_name
+{
+    display: inline;
+    
+}
+
+a{
+    text-decoration: none;  
+    color: white;  
+    }
+
+#input_name{
+    grid-column-start: 3;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 20px;
+    width: 250px;
+    color: white;
+    
+}
+#ul_nav{
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 3%;
+    
+}
+#nav_right{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#nav_right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 3px;
+}
+#pull_requests{
+    white-space: nowrap;
+}
+#menu{
+    display: flex;
+    gap: 5%;
+    grid-column: 2/4;
+    grid-row-start: 2;
+   
+    padding: 40px;
+margin-top: -10px;
+    overflow: hidden;
+    
+}
+.menu{
+    display: flex;
+}
+
+hr{
+    grid-column: 1/4;
+    grid-row-start: 3;
+}
+
+#user {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+margin: 10%;
+
+}
+#img_user{
+    
+border-radius: 50%;
+width:80%;
+}
+#career{
+    padding-top: 4%;
+    padding-bottom:2% ;
+}
+#edit{
+padding: 2%;
+margin-bottom: 7%;
+margin-top: 7%;
+}
+
+#repositories{
+    grid-column: 2/4;
+    margin: 7%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    
+    gap: 5%;
+}
+#Popular_repositories{
+    grid-column: 1/3;
+}
+.repositorie{
+    border-radius: 15px;
+border: 1px solid black;
+padding: 4%;
+line-height: 120%;
+}
+#language{
+    margin-top: 4%;
+}
+#name_project{
+    color:rgb(81, 180, 255)
+}
+#description {
+    color:rgb(159, 161, 161)
+}
+.follow{
+    display: inline;
+    color:rgb(137, 136, 136);
+    margin-top: 2%;
+}
+@media screen and (max-width: 770px) {
+    body {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: auto auto auto;
+        text-align: inherit;
+
+    }
+    #menu{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        overflow: scroll;
+    }
+    #repositories,#user {
+      grid-column-start: 1;
+    }
+    #repositories{
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: 1% 20% 20% 20% 20%   20% 20% ;
+    }
+    .repositorie{
+        grid-column-start: 1;
+    }
+    #user{
+    
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70px 40px   80px 70px 20px 20px 120px ;
+      
+    }
+#name_account{
+grid-column-start: 2;
+}
+#career{
+grid-column-start: 2;
+}
+#edit{
+grid-column:1/3;
+grid-row:7 ;
+margin-top: 40px;
+}
+#follow{
+grid-column:1/3;
+grid-row:6 ;
+margin-top: 40px;
+}
+#img_user{
+grid-column:1;
+grid-row:1/6 ;
+}
+
+#img_nav_user{
+    display: none !important;
+}
+#add_nav_user{
+    display: none !important;
+}
+
+
+#add_nav{
+    display: none;
+}
+#ul_nav{
+    
+    display: none;
+    
+}
+#nav {
+    
+    display: grid;
+    grid-template-columns: 10% 15% 10%;
+    grid-template-rows: auto auto;
+    
+    
+}
+#img_github{
+    display: block !important;
+    grid-column-start: 2;
+}
+#nav_right{
+    grid-column-start: 3;
+}
+#list_main{
+grid-column-start: 1;
+grid-template-rows: auto auto;
+    position: relative;
+cursor: pointer;
+}
+#list{
+
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+}
+#list::before{
+    position: absolute;
+    content: "";
+    top: -7px;
+
+    width: 25px;
+    height: 3px;
+    background-color: rgb(250, 246, 246);
+    
+
+}
+#list::after{
+    position: absolute;
+    content: "";
+    top: 7px;
+
+    width: 25px;
+    height: 3px;
+    background-color: rgb(249, 247, 247);
+    
+
+}
+#ul_nav_1{
+    grid-column: 1/4;
+    grid-row-start: 2;
+}
+}

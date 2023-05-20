@@ -1,0 +1,240 @@
+@font-face{
+    font-family: 'farah';
+    src: url(ttf/farah.ttf) format(truetype);
+   
+}
+#nav {
+    grid-column:1/4 ;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: black;
+    align-items: center;
+    color: white;
+    padding:.3%;
+}
+#git_hup,#input_name
+{
+    display: inline;
+    
+}
+#logo{
+    grid-column-start: 1;
+display: flex;
+align-items: center;
+}
+a{
+text-decoration: none;  
+color: white;  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#min {
+    display: grid;
+    grid-template-columns: 30%  30%  30%;
+    grid-template-rows: auto auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+#user1{
+   grid-column-start: 1; 
+}
+#vs_name{
+font-family: 'farah';
+font-size:50px;
+grid-column-start: 2;
+grid-row-start: 1;
+color:rgb(78, 99, 125)
+}
+
+#user2{
+    grid-column-start: 3; 
+    
+}
+#img_user1{
+    border-radius: 50%;
+    width: 220px;
+
+}
+#img_user2{
+    border-radius: 50%;
+    width: 200px;
+}
+.input_name{
+    margin-top: 5%;
+
+   
+  
+}
+#input_name2{
+    border-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(53, 244, 152),-1px -1px 1px 1px rgb(53, 244, 152);
+    border: none;
+}
+#input_name1{
+    border-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(244, 53, 209),-1px -1px 1px 1px rgb(244, 53, 209);
+    border: none;
+}
+#button{
+    color: aliceblue;
+    margin-top: 100px; 
+    padding: 30px;
+    background-color: rgb(88, 129, 252);
+    border-radius: 40px;
+    border: none;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#result1{
+margin-bottom: 5%;
+}
+#result2{
+margin-bottom: 5%;
+}
+#about_user{
+margin-top: 15%;    
+}
+
+a{
+    text-decoration: none;  
+    color: white;  
+    }
+
+#input_name{
+    grid-column-start: 3;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 20px;
+    width: 250px;
+    color: white;
+    
+}
+#nav {
+    grid-column:1/4 ;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 820px auto ;
+    background-color: black;
+    
+    align-items: center;
+    color: white;
+    padding:1%;
+    
+}
+#ul_nav{
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 3%;
+    
+}
+#nav_right{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    #min{
+         display: grid;
+         grid-template-columns: 30% 35% 30% ;
+        grid-template-rows: auto auto auto auto;
+        }
+    #user1{grid-row-start: 1;
+    grid-column: 1/4;
+}
+#user2{grid-row-start: 3;
+grid-column: 1/4;}
+#vs_name{
+    
+    grid-row-start: 2;
+    grid-column-start: 2;}
+#button{grid-row-start: 4;
+    grid-column-start: 2;}
+    #img_user{
+        grid-column:1;
+        grid-row:1/6 ;
+        }
+        
+        #img_nav_user{
+            display: none !important;
+        }
+        #add_nav_user{
+            display: none !important;
+        }
+        
+        
+        #add_nav{
+            display: none;
+        }
+        #ul_nav{
+            
+            display: none;
+            
+        }
+        #nav {
+            
+            display: grid;
+            grid-template-columns: 10% 15% 10%;
+            grid-template-rows: auto auto;
+            
+            
+        }
+        #img_github{
+            display: block !important;
+            grid-column-start: 2;
+        }
+        #nav_right{
+            grid-column-start: 3;
+        }
+        #list_main{
+        grid-column-start: 1;
+        grid-template-rows: auto auto;
+            position: relative;
+        cursor: pointer;
+        }
+        #list{
+        
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+        }
+        #list::before{
+            position: absolute;
+            content: "";
+            top: -7px;
+        
+            width: 25px;
+            height: 3px;
+            background-color: rgb(250, 246, 246);
+            
+        
+        }
+        #list::after{
+            position: absolute;
+            content: "";
+            top: 7px;
+        
+            width: 25px;
+            height: 3px;
+            background-color: rgb(249, 247, 247);
+            
+        
+        }
+        #ul_nav_1{
+            grid-column: 1/4;
+            grid-row-start: 2;
+        }
+          
+        }
+     
